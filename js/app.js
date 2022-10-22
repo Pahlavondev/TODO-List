@@ -30,16 +30,16 @@ function setTodos() {
 // time
 function getTime() {
   const now = new Date();
-  const date = now.getDate() < 10 ? 0 + now.getDate() : now.getDate();
+  const date = now.getDate() < 10 ? "0" + now.getDate() : now.getDate();
   const month = now.getMonth() < 10 ? 0 + (now.getMonth() + 1) : now.getMonth();
   const year = now.getFullYear();
 
-  const hour = now.getHours() < 10 ? 0 + now.getHours() : now.getHours();
+  const hour = now.getHours() < 10 ? "0" + now.getHours() : now.getHours();
   const minute =
-    now.getMinutes() < 10 ? 0 + now.getMinutes() : now.getMinutes();
+    now.getMinutes() < 10 ? "0" + now.getMinutes() : now.getMinutes();
 
   const second =
-    now.getSeconds() < 10 ? 0 + now.getSeconds() : now.getSeconds();
+    now.getSeconds() < 10 ? "0" + now.getSeconds() : now.getSeconds();
 
   let months = [
     "January",
